@@ -2811,7 +2811,7 @@
               $("#result")
                 .html(
                   data
-                    .map((element) => {
+                    .map(function (element) {
                       return (
                         "<tr>\
                                 <td>" +
@@ -2952,7 +2952,7 @@
             });
             len += val.length;
           });
-          pool.sort((a, b) => {
+          pool.sort(function (a, b) {
             if (isNaN(a.distance)) return 1;
             if (isNaN(b.distance)) return -1;
             if (a.distance > b.distance) return 1;

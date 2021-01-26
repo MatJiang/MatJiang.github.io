@@ -11,6 +11,11 @@
         #disResult>tr>td:first-child>a {
             text-decoration: none;
         }
+
+        iframe {
+            position: fixed;
+            margin-top: 5em;
+        }
     </style>
 </head>
 
@@ -86,9 +91,9 @@
                         <tbody id="disResult"></tbody>
                     </table>
                 </div>
-                <div class="col-6">
-                    <iframe style="position: fixed; margin-top: 5em" id="googleEmbed" width="600" height="450"
-                        frameborder="0" style="border: 0" src="" allowfullscreen>
+                <div class="col-6 iframe-rwd">
+                    <iframe id="googleEmbed" width="600" height="450" frameborder="0" style="border: 0" src=""
+                        allowfullscreen>
                     </iframe>
                 </div>
             </div>
